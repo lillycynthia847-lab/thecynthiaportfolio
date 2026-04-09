@@ -1594,10 +1594,16 @@ section[id] {
     display: flex;
   }
   
+  .hero {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  
   .hero-content {
     grid-template-columns: 1fr;
     text-align: center;
     padding-top: 120px;
+    padding-bottom: var(--space-md);
   }
   
   .hero-text {
@@ -1631,7 +1637,11 @@ section[id] {
   }
   
   .hero-socials {
-    bottom: var(--space-md);
+    position: static;
+    transform: none;
+    justify-content: center;
+    margin-top: var(--space-md);
+    padding-bottom: var(--space-lg);
   }
   
   .scroll-indicator {
